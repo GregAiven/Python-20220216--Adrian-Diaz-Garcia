@@ -45,6 +45,11 @@ def publish_results(results: List[Dict]):
 
 
 def run():
+    """
+    Main entrypoint to generate traffic, it will repeat the process 100 times
+    waiting 5 secs in between iterations.
+    On each iteration it will publish a message per website defined in settings.py
+    """
     for i in range(100):
         publish_results(gather_web_results())
         time.sleep(5)  # Sleep 5 secs to avoid ddosing the websites
