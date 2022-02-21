@@ -1,0 +1,10 @@
+# Testing
+pytest
+pytest-cov
+pytest-httpx
+pytest-asyncio
+
+# Code formatters and linters
+black==22.1.0
+flake8==4.0.1
+isort==5.10.1
